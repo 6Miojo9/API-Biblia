@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    height: 20%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header > h1{
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    align-content: center;
+}
+
+#pesquisar{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#input{
+    width: 20%;
+    display: flex; 
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+#input > select{
+    width: 100%;
+}
+
+#botões{
+    width: 50%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#botao{
+    width: 30%;
+    background-color: white;
+}
+
+#botao:hover{
+    background-color: black;
+    color: white;
+    border: white solid 1px;
+}
+
+main{
+    width: 100%;
+    height: 80%;
+    background-color: rgb(125, 125, 125);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#resposta{
+    width: 80%;
+    height: 80%;
+    background-color: rgb(20, 20, 20);
+    text-align: center;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loader{
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 100px auto;
+}
+  
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#texto{
+    width: 85%;
+    height: 85%;
+    background-color: beige;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    overflow: auto;
+    text-align: start;
+}
+
+h1, h3{
+    text-align: center;
+    justify-content: center;
+}
+
+#texto::-webkit-scrollbar {
+    width: 10px;
+}
+  
+#texto::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+  
+#texto::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+#linha{
+    display: flex;
+}

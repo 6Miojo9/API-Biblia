@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Trabalho API</title>
+</head>
+<body>
+    <header>
+        <h1>API da Biblia</h1>
+        <div id="pesquisar">
+            <div id="input">
+                <label for="versao">Versão</label>
+                <select name="versao" id="versao"></select>
+            </div>
+            <div id="input">
+                <label for="livro">Livro</label>
+                <select name="Livro" id="livro"></select>
+            </div>
+            <div id="input">
+                <label for="capitulo">Capítulo</label>
+                <select name="capitulo" id="capitulo"></select>
+            </div>
+            <div id="input">
+                <label for="versiculo">Versículo</label>
+                <select name="versiculo" id="versiculo"></select>
+            </div>
+        </div>
+        <div id="botões">
+            <button id="botao" onclick="buscar()">Buscar</button>
+            <button id="botao" onclick="baixar()">Baixar</button>
+        </div>
+    </header>
+    <main>
+        <div id="resposta">
+            <div id="loader" style="display: none; color:white">Carregando...</div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
